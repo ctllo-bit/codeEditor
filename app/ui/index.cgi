@@ -94,4 +94,3 @@ echo "Content-Type: $mime"
 echo ""
 
 cat "$TARGET_FILE"
-
