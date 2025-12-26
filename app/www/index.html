@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8" />
-  <title>Monaco in fnOS</title>
-  <style>
-    html, body, #container {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monaco in fnOS</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <iframe
+    src="https://baidu.com"
+    sandbox="allow-same-origin allow-scripts allow-forms allow-modals allow-popups">
+  </iframe>
 
-   <iframe id="container" 
-   src="https://github1s.com/blueedgetechno/" 
-   sandbox="allow-same-origin allow-scripts allow-forms allow-modals allow-popups">
-   </iframe>
+    <!-- <iframe
+    src="http://172.31.127.57:5333/?workspace=/home/coder/"
+    sandbox="allow-same-origin allow-scripts allow-forms allow-modals allow-popups">
+  </iframe> -->
 
-
+    <!-- 2. 引入外部 JS 文件（核心知识点：JS 文件引入） -->
+    <!-- 建议放在 body 底部：确保 DOM 加载完成后再执行 JS，避免获取不到元素 -->
+    <!-- 路径说明：./js/main.js 是JS文件的相对路径 -->
+    <!-- <script src="./js/main.js"></script> -->
 </body>
 </html>

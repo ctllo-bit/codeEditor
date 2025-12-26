@@ -1,7 +1,7 @@
 {
     ".url": {
         "codeEditor.Application": {
-            "title": "代码编辑器",
+            "title": "codeEditor",
             "icon": "images/icon_{0}.png",
             "type": "iframe",
             "protocol": "http",
