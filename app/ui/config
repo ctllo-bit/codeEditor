@@ -1,0 +1,12 @@
+{
+    ".url": {
+        "codeEditor.Application": {
+            "title": "代码编辑器",
+            "icon": "images/icon_{0}.png",
+            "type": "iframe",
+            "protocol": "http",
+            "url": "/cgi/ThirdParty/codeEditor/index.cgi",
+            "allUsers": true
+        }
+    }
+}
