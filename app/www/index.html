@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <iframe
-    src="http://172.24.234.55:5333/?workspace=/home/coder/"
-    sandbox="allow-same-origin allow-scripts allow-forms allow-modals allow-popups">
+  <iframe src="http://${REQUEST_IP}:5333/?workspace=/home/coder/"
+  sandbox="allow-same-origin allow-scripts allow-forms allow-modals allow-popups allow-downloads allow-top-navigation-by-user-activation">
   </iframe>
-
-
   <script src="./js/main.js"></script>
 </body>
 </html>

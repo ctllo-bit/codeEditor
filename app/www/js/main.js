@@ -18,4 +18,3 @@
 
 // 教学点5：控制台输出（调试常用）
 console.log('✅ 外部JS文件加载成功！');
-console.log('🔍 当前点击的元素：', helloText);

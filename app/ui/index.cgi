@@ -21,6 +21,7 @@ URI_NO_QUERY="${REQUEST_URI%%\?*}"
 
 # 默认值（如果没匹配到 index.cgi）
 REL_PATH="/"
+REQUEST_IP=$(hostname -I | awk '{print $1}')
 
 # 用 index.cgi 作为切割点，取后面的部分
 case "$URI_NO_QUERY" in
@@ -93,4 +94,13 @@ esac
 echo "Content-Type: $mime"
 echo ""
 
-cat "$TARGET_FILE"
+# 检查是否为 HTML 文件
+if [[ "$mime" == *"text/html"* ]]; then
+    # 核心修正：
+    # 1. HTML 中占位符是 ${REQUEST_IP}，所以 sed 也要匹配这个字符串
+    # 2. Shell 变量名是 $REQUEST_IP，它是你在脚本开头通过 hostname -I 获取的
+    sed "s/\${REQUEST_IP}/$REQUEST_IP/g" "$TARGET_FILE"
+else
+    # 其他非 HTML 静态资源（JS/CSS/图片）直接原样输出
+    cat "$TARGET_FILE"
+fi
