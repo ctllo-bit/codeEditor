@@ -4,7 +4,6 @@
             "title": "codeEditor",
             "icon": "images/icon_{0}.png",
             "type": "iframe",
-            "protocol": "http",
             "url": "/cgi/ThirdParty/codeEditor/index.cgi/",
             "allUsers": true
         }
