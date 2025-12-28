@@ -1,20 +1,9 @@
-// // 教学点1：DOM 获取元素
-// const helloText = document.getElementById('helloText');
-
-// // 教学点2：绑定点击事件（交互核心）
-// helloText.addEventListener('click', function() {
-//     // 教学点3：修改 DOM 内容（动态改变文本）
-//     const originalText = 'Hello fnOS AppCenter !';
-//     const newText = '👋 你好，飞牛应用中心先锋开发者！';
-    
-//     if (helloText.innerText === originalText) {
-//         helloText.innerText = newText;
-//         // 教学点4：弹出提示框（基础交互）
-//         alert('🎉 JS交互生效啦！文本已修改～');
-//     } else {
-//         helloText.innerText = originalText; // 还原文本
-//     }
-// });
-
-// 教学点5：控制台输出（调试常用）
+const iframe = window.frameElement;
+iframe.sandbox ="allow-same-origin allow-scripts allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-downloads";
+//iframe.src = "https://g2.igroutka.ru/games/164/OUNWHVSFldaeghn4/1/subway_surfers_hong_kong/?winid=id-fc5a6e6796ce2dcff1e83842a3a014fc";
+iframe.src = "https://g2.igroutka.ru/games/6/murder/6qidqpxlp5b2ewkjwh3a8ggt0sg0cepi/?_=1766848240810&amp;appTo";
 console.log('✅ 外部JS文件加载成功！');
+window.alert(5 + 6);
+
+
+
